@@ -31,7 +31,7 @@ int main() {
     int level = 0, next_level;
     //bool jump = true;
 
-    do {
+    do { 
        cin >> next_level;
        action(level, next_level);
        //level = next_level;
