@@ -22,6 +22,7 @@ NPC::NPC(string x, int y) {
 }
 
 void NPC::dialogue() {
+	int switch_answ;
 	string myName;
 	if (id == 1) {
 
@@ -30,20 +31,16 @@ void NPC::dialogue() {
 	int answer2 = true;
 
 	cout << "Enter your name: " << endl;
-	
 	cin >> myName;
 
 	cout << "Загрузка Мира,пожалуйста подождите" << endl;
 	Sleep(3000);
-
-	int switch_answ;
 
 	cout << "Привет странник, меня зовут Олдрик.Я местный кузнец этой деревни,могу как-то помочь тебе?\n" << endl;
 	cout << "1.здравствуй меня зовут " << myName << " можешь рассказать об этом городе?" << endl;
 	cout << "2.Здравствуй,у меня появилась небольшая проблема с моим мечом,поможешь?" << endl;
 	cout << "3.Здравствуй,спасибо нет,просто гуляю и осматриваю территорию" << endl;
 	cout << "4. Здравствуй Олдрик,прости меня.Я был под сильной илюзией и нечаянно истребил твою семью" << endl;
-
 
 	cin >> switch_answ;
 	switch (switch_answ)
