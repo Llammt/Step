@@ -23,7 +23,6 @@ NPC::NPC(string x, int y) {
 
 void NPC::dialogue() {
 	string myName;
-	//cout << "Hello,my name is "<< name << endl;
 	if (id == 1) {
 
 	int force = 3;
@@ -35,7 +34,7 @@ void NPC::dialogue() {
 	cin >> myName;
 
 	cout << "Загрузка Мира,пожалуйста подождите" << endl;
-	//Sleep(3000);
+	Sleep(3000);
 
 	int switch_answ;
 
