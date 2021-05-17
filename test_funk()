@@ -1,0 +1,8 @@
+void test_code() {
+	manager IT_dep_dir(1, "Ivanov", 7); //1 - id Ivanov, 7 - id IT department
+	user IT_dep_empl(2, "Sidorov", 7);
+	IT_dep_dir.create_task(1, 7, 2);//1 - id task, 7 - id IT dep
+	IT_dep_empl.show_tasks();
+	IT_dep_empl.mark();
+	IT_dep_empl.show_tasks();
+}
